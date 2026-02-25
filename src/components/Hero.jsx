@@ -1,0 +1,105 @@
+import { useState, useEffect, useCallback } from 'react';
+import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
+import './Hero.css';
+
+const slides = [
+    {
+        image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&h=900&fit=crop',
+        alt: 'Team working on digital solutions',
+    },
+    {
+        image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1600&h=900&fit=crop',
+        alt: 'Creative workspace with technology',
+    },
+    {
+        image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1600&h=900&fit=crop',
+        alt: 'Modern technology and innovation',
+    },
+];
+
+const Hero = () => {
+    const [current, setCurrent] = useState(0);
+    const [isTransitioning, setIsTransitioning] = useState(false);
+
+    const goTo = useCallback((index) => {
+        if (isTransitioning) return;
+        setIsTransitioning(true);
+        setCurrent(index);
+        setTimeout(() => setIsTransitioning(false), 800);
+    }, [isTransitioning]);
+
+    const next = useCallback(() => {
+        goTo((current + 1) % slides.length);
+    }, [current, goTo]);
+
+    const prev = useCallback(() => {
+        goTo((current - 1 + slides.length) % slides.length);
+    }, [current, goTo]);
+
+    // Auto-play
+    useEffect(() => {
+        const timer = setInterval(next, 5000);
+        return () => clearInterval(timer);
+    }, [next]);
+
+    return (
+        <section className="hero" id="hero">
+            {/* Slides */}
+            <div className="hero-slides">
+                {slides.map((slide, index) => (
+                    <div
+                        key={index}
+                        className={`hero-slide ${index === current ? 'active' : ''}`}
+                    >
+                        <img src={slide.image} alt={slide.alt} />
+                    </div>
+                ))}
+                <div className="hero-overlay" />
+            </div>
+
+            {/* Content */}
+            <div className="container hero-content">
+                <h1 className="hero-title">
+                    Redefining Possibilities with World-Class
+                    <br />
+                    Digital Innovation
+                </h1>
+
+                <p className="hero-desc">
+                    From App Development to AI, Cybersecurity, Cloud, and Infrastructure —
+                    <br />
+                    We craft visionary solutions that inspire growth, drive innovation, and empower your success.
+                </p>
+
+                <div className="hero-actions">
+                    <a href="#services" className="btn-hero">
+                        Get Started
+                        <ArrowRight size={18} />
+                    </a>
+                </div>
+            </div>
+
+            {/* Slide Controls */}
+            <div className="hero-controls">
+                <button className="hero-arrow" onClick={prev} aria-label="Previous slide">
+                    <ChevronLeft size={22} />
+                </button>
+                <div className="hero-dots">
+                    {slides.map((_, index) => (
+                        <button
+                            key={index}
+                            className={`hero-dot ${index === current ? 'active' : ''}`}
+                            onClick={() => goTo(index)}
+                            aria-label={`Go to slide ${index + 1}`}
+                        />
+                    ))}
+                </div>
+                <button className="hero-arrow" onClick={next} aria-label="Next slide">
+                    <ChevronRight size={22} />
+                </button>
+            </div>
+        </section>
+    );
+};
+
+export default Hero;
