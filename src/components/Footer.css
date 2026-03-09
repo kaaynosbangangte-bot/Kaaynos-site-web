@@ -98,12 +98,13 @@
 .footer-logo {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-family: var(--font-heading);
-    font-size: 1.4rem;
-    font-weight: 800;
-    color: var(--white);
     margin-bottom: 16px;
+}
+
+.footer-logo img {
+    height: 48px;
+    width: auto;
+    object-fit: contain;
 }
 
 .footer-brand p {

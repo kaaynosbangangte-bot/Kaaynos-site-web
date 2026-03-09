@@ -15,7 +15,7 @@ const Navbar = () => {
   const links = [
     { label: 'About', href: '#about' },
     { label: 'Services', href: '#services' },
-    { label: 'Portfolio', href: '#why-us' },
+    { label: 'Portfolio', href: '#portfolio' },
     { label: 'Contact Us', href: '#contact' },
   ];
 
@@ -23,8 +23,7 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container navbar-inner">
         <a href="#hero" className="navbar-logo">
-          <div className="logo-icon">K</div>
-          <span>Kaaynos</span>
+          <img src="/logo.png" alt="Kaaynos Logo" />
         </a>
 
         <ul className={`navbar-links ${mobileOpen ? 'open' : ''}`}>

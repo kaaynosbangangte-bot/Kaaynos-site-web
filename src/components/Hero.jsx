@@ -4,15 +4,15 @@ import './Hero.css';
 
 const slides = [
     {
-        image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&h=900&fit=crop',
+        image: '/hero1.jpg',
         alt: 'Team working on digital solutions',
     },
     {
-        image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1600&h=900&fit=crop',
+        image: '/hero2.jpg',
         alt: 'Creative workspace with technology',
     },
     {
-        image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1600&h=900&fit=crop',
+        image: '/hero3.jpg',
         alt: 'Modern technology and innovation',
     },
 ];
