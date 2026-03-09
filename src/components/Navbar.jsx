@@ -12,6 +12,18 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [mobileOpen]);
+
   const links = [
     { label: 'About', href: '#about' },
     { label: 'Services', href: '#services' },
@@ -51,7 +63,7 @@ const Navbar = () => {
         </a>
 
         <button
-          className="navbar-toggle"
+          className={`navbar-toggle ${mobileOpen ? 'open' : ''}`}
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
