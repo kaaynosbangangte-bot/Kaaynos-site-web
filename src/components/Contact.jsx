@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Send, MapPin, Phone, Mail, Clock, ArrowUpRight } from 'lucide-react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
+import { useLanguage } from '../context/LanguageContext';
 import './Contact.css';
 
 const Contact = () => {
@@ -14,6 +15,7 @@ const Contact = () => {
   const headerRef = useScrollReveal();
   const infoRef = useScrollReveal();
   const formRef = useScrollReveal();
+  const { t } = useLanguage();
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -21,7 +23,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Merci pour votre message ! Nous vous répondrons bientôt.');
+    alert(t('contact', 'successAlert'));
     setFormData({ name: '', email: '', subject: '', message: '' });
   };
 
@@ -36,15 +38,15 @@ const Contact = () => {
       <div className="container">
         <div className="contact-top reveal fade-up" ref={headerRef}>
           <div className="contact-top-text">
-            <span className="contact-label">Contactez-nous</span>
+            <span className="contact-label">{t('contact', 'label')}</span>
             <h2 className="contact-title">
-              Join the Kaaynos Journey —{' '}
-              <span>Innovate</span>, Grow, and <span>Lead</span>
+              {t('contact', 'title1')}{' '}
+              <span>{t('contact', 'titleHighlight1')}</span>{t('contact', 'titleMiddle')}{' '}
+              <span>{t('contact', 'titleHighlight2')}</span>
             </h2>
           </div>
           <p className="contact-top-desc">
-            Ready to transform your digital presence? Let's discuss how we can help
-            your business grow with our innovative solutions.
+            {t('contact', 'desc')}
           </p>
         </div>
 
@@ -56,7 +58,7 @@ const Contact = () => {
                 <MapPin size={22} />
               </div>
               <div>
-                <h4>Our Office</h4>
+                <h4>{t('contact', 'ourOffice')}</h4>
                 <p>Abidjan, Côte d'Ivoire</p>
               </div>
             </div>
@@ -66,7 +68,7 @@ const Contact = () => {
                 <Phone size={22} />
               </div>
               <div>
-                <h4>Call Us</h4>
+                <h4>{t('contact', 'callUs')}</h4>
                 <p>+225 07 00 00 00 00</p>
               </div>
             </div>
@@ -76,7 +78,7 @@ const Contact = () => {
                 <Mail size={22} />
               </div>
               <div>
-                <h4>Email Us</h4>
+                <h4>{t('contact', 'emailUs')}</h4>
                 <p>contact@kaaynos.com</p>
               </div>
             </div>
@@ -86,13 +88,13 @@ const Contact = () => {
                 <Clock size={22} />
               </div>
               <div>
-                <h4>Working Hours</h4>
-                <p>Mon — Fri: 08h - 18h</p>
+                <h4>{t('contact', 'workingHours')}</h4>
+                <p>{t('contact', 'workingHoursValue')}</p>
               </div>
             </div>
 
             <div className="contact-cta-card">
-              <p>Let's build something amazing together.</p>
+              <p>{t('contact', 'ctaText')}</p>
               <a href="mailto:contact@kaaynos.com" className="contact-cta-link">
                 contact@kaaynos.com
                 <ArrowUpRight size={14} />
@@ -103,29 +105,29 @@ const Contact = () => {
           {/* Form */}
           <form className="contact-form reveal fade-left delay-400" onSubmit={handleSubmit} ref={formRef}>
             <div className="form-header">
-              <h3>Send us a message</h3>
-              <p>We'll get back to you within 24 hours.</p>
+              <h3>{t('contact', 'formTitle')}</h3>
+              <p>{t('contact', 'formSubtitle')}</p>
             </div>
             <div className="form-row">
               <div className="form-group">
-                <label htmlFor="name">Your Name</label>
+                <label htmlFor="name">{t('contact', 'labelName')}</label>
                 <input
                   type="text"
                   id="name"
                   name="name"
-                  placeholder="John Doe"
+                  placeholder={t('contact', 'placeholderName')}
                   value={formData.name}
                   onChange={handleChange}
                   required
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="email">Your Email</label>
+                <label htmlFor="email">{t('contact', 'labelEmail')}</label>
                 <input
                   type="email"
                   id="email"
                   name="email"
-                  placeholder="john@example.com"
+                  placeholder={t('contact', 'placeholderEmail')}
                   value={formData.email}
                   onChange={handleChange}
                   required
@@ -133,23 +135,23 @@ const Contact = () => {
               </div>
             </div>
             <div className="form-group">
-              <label htmlFor="subject">Subject</label>
+              <label htmlFor="subject">{t('contact', 'labelSubject')}</label>
               <input
                 type="text"
                 id="subject"
                 name="subject"
-                placeholder="How can we help?"
+                placeholder={t('contact', 'placeholderSubject')}
                 value={formData.subject}
                 onChange={handleChange}
                 required
               />
             </div>
             <div className="form-group">
-              <label htmlFor="message">Message</label>
+              <label htmlFor="message">{t('contact', 'labelMessage')}</label>
               <textarea
                 id="message"
                 name="message"
-                placeholder="Tell us about your project..."
+                placeholder={t('contact', 'placeholderMessage')}
                 rows={5}
                 value={formData.message}
                 onChange={handleChange}
@@ -158,7 +160,7 @@ const Contact = () => {
             </div>
             <button type="submit" className="btn-submit">
               <Send size={16} />
-              Send Message
+              {t('contact', 'submitBtn')}
             </button>
           </form>
         </div>

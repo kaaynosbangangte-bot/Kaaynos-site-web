@@ -1,0 +1,182 @@
+{
+  "navbar": {
+    "about": "À Propos",
+    "services": "Services",
+    "training": "Formations",
+    "portfolio": "Réalisations",
+    "contact": "Contactez-nous",
+    "getStarted": "Commencer"
+  },
+  "hero": {
+    "title1": "Redéfinir les possibilités avec des solutions numériques",
+    "title2": "de classe mondiale",
+    "desc1": "Du développement d'applications à l'IA, la cybersécurité, le cloud et les infrastructures —",
+    "desc2": "Nous créons des solutions visionnaires qui inspirent la croissance, stimulent l'innovation et propulsent votre succès.",
+    "cta": "Commencer"
+  },
+  "about": {
+    "title1": "Découvrir Kaaynos :",
+    "titleHighlight": "Solutions Numériques de Pointe",
+    "title2": "Conçues pour Votre Succès",
+    "subtitle": "Nous proposons des solutions en développement web, IA, cybersécurité, cloud et réseaux pour aider votre entreprise à prospérer grâce à une technologie simple et efficace.",
+    "learnMore": "En Savoir Plus",
+    "whoWeAre": "Qui Sommes-Nous",
+    "whoWeAreText": "Kaaynos est une puissance technologique qui remet en question le statu quo en exploitant les talents africains pour fournir des solutions de premier plan. Grâce à l'efficacité des coûts, la synergie des fuseaux horaires et une innovation continue, nous aidons les entreprises tout en favorisant la durabilité, l'impact social et un avenir façonné par une technologie audacieuse et transformatrice.",
+    "ourMission": "Notre Mission",
+    "ourMissionText": "Nous libérons les esprits les plus brillants d'Afrique pour transformer l'avenir. Nous permettons aux meilleurs talents de créer des solutions technologiques évolutives qui stimulent la croissance des entreprises, encouragent l'innovation et construisent un avenir durable et impactant.",
+    "ourVision": "Notre Vision",
+    "ourVisionText": "Devenir la première puissance technologique d'Afrique, pionnière en innovation, redéfinissant l'excellence et créant un impact durable à l'échelle mondiale.",
+    "ourPurpose": "Notre Objectif",
+    "purposeItems": [
+      { "strong": "Libérer le Potentiel", "text": "Former les esprits les plus brillants d'Afrique et les préparer à diriger dans l'arène technologique mondiale." },
+      { "strong": "Promouvoir la Durabilité", "text": "Piloter des initiatives ESG qui créent un impact social et environnemental durable." },
+      { "strong": "Accélérer l'Innovation", "text": "Fournir des solutions technologiques révolutionnaires et rentables qui alimentent la croissance et redéfinissent les possibilités." }
+    ],
+    "coreValues": "Valeurs Fondamentales",
+    "valuesItems": [
+      { "strong": "Excellence", "text": "Viser des résultats de qualité supérieure." },
+      { "strong": "Innovation", "text": "Créer des solutions tournées vers l'avenir." },
+      { "strong": "Durabilité", "text": "S'engager dans des pratiques responsables." },
+      { "strong": "Autonomisation", "text": "Investir dans les talents et le leadership." },
+      { "strong": "Collaboration", "text": "Construire des partenariats solides." }
+    ]
+  },
+  "services": {
+    "label": "Ce Que Nous Faisons",
+    "title1": "Nos",
+    "titleHighlight": "Services Technologiques",
+    "desc": "Des solutions numériques complètes adaptées à vos défis commerciaux uniques et pour stimuler une croissance durable.",
+    "items": [
+      { "title": "Conception & Développement Web", "desc": "Création de sites web époustouflants et responsifs qui captivent votre audience et génèrent des conversions." },
+      { "title": "IA & Machine Learning", "desc": "Exploitation de l'intelligence artificielle pour automatiser les processus et fournir des informations intelligentes." },
+      { "title": "Développement d'Applications Mobiles", "desc": "Création d'applications mobiles puissantes et multiplateformes que les utilisateurs adorent." },
+      { "title": "Cybersécurité", "desc": "Protection de vos actifs numériques avec des solutions de sécurité de niveau entreprise." },
+      { "title": "Infrastructure Cloud", "desc": "Des solutions cloud évolutives et fiables pour alimenter vos opérations commerciales à l'échelle mondiale." },
+      { "title": "Analyse de Données", "desc": "Transformation des données brutes en intelligence d'affaires exploitable et en informations stratégiques." }
+    ]
+  },
+  "portfolio": {
+    "label": "Nos Réalisations",
+    "title1": "Projets",
+    "titleHighlight": "Phares",
+    "desc": "Découvrez nos dernières réalisations. Nous sommes fiers de fournir des solutions numériques qui allient un design époustouflant à une ingénierie robuste.",
+    "viewSite": "Visiter le Site",
+    "items": [
+      { "title": "Plateforme Universitaire UDM", "desc": "Un site institutionnel complet et moderne pour l'Université, conçu avec un design professionnel et une navigation intuitive.", "category": "Site Web" },
+      { "title": "Cabinet Dentaire Smile", "desc": "Un site web élégant et professionnel pour une clinique dentaire, conçu pour inspirer confiance et faciliter la prise de rendez-vous en ligne.", "category": "Site Web" }
+    ]
+  },
+  "whyUs": {
+    "label": "Nos Avantages",
+    "title1": "Pourquoi",
+    "titleHighlight": "Travailler",
+    "title2": "Avec Nous ?",
+    "desc": "Une entreprise IT dynamique et innovante fournissant des solutions de pointe qui génèrent un succès mesurable pour nos clients.",
+    "highlight": "Nous combinons une expertise technique approfondie avec une concentration constante sur les résultats, faisant de nous votre partenaire technologique idéal pour la croissance.",
+    "cta": "Démarrer un projet",
+    "items": [
+      { "title": "Solutions Rapides & Évolutives", "desc": "Déploiement rapide de solutions de pointe conçues pour évoluer en toute fluidité avec vos besoins." },
+      { "title": "Trouvez les Experts Idéaux", "desc": "Accédez à un réseau sélectionné de professionnels de premier plan avec une expertise et une vision éprouvées." },
+      { "title": "Approche Qualité d'Abord", "desc": "Un contrôle qualité rigoureux à chaque étape garantit une livraison impeccable et ponctuelle." },
+      { "title": "Portés par l'Innovation", "desc": "Anticiper les tendances avec des solutions innovantes conçues pour l'avenir de la technologie." },
+      { "title": "Partenariats de Confiance", "desc": "Construire des relations durables fondées sur la confiance, la transparence et le succès mutuel." },
+      { "title": "Support Dédié 24/7", "desc": "Une assistance permanente garantissant que vos opérations commerciales ne manquent jamais un temps." }
+    ]
+  },
+  "team": {
+    "label": "Notre Équipe",
+    "title1": "Rencontrez Nos",
+    "titleHighlight": "Leaders",
+    "desc": "Notre équipe de direction expérimentée réunit des décennies d'expertise en technologie, stratégie d'entreprise et innovation pour propulser votre succès.",
+    "viewProfile": "Voir le Profil",
+    "members": [
+      { "role": "PDG", "bio": "Leader visionnaire pilotant la croissance stratégique et la transformation numérique de Kaaynos en Afrique." },
+      { "role": "Développeur Principal", "bio": "Expert full-stack concevant des solutions d'entreprise performantes et évolutives." },
+      { "role": "Responsable IA", "bio": "Spécialiste en intelligence artificielle développant des solutions innovantes basées sur l'IA." }
+    ]
+  },
+  "contact": {
+    "label": "Contactez-nous",
+    "title1": "Rejoignez l'Aventure Kaaynos —",
+    "titleHighlight1": "Innovez",
+    "titleMiddle": ", Grandissez, et",
+    "titleHighlight2": "Dirigez",
+    "desc": "Prêt à transformer votre présence numérique ? Discutons de la façon dont nous pouvons aider votre entreprise à croître grâce à nos solutions innovantes.",
+    "ourOffice": "Notre Bureau",
+    "callUs": "Appelez-nous",
+    "emailUs": "Écrivez-nous",
+    "workingHours": "Heures d'Ouverture",
+    "workingHoursValue": "Lun — Ven : 08h - 18h",
+    "ctaText": "Construisons quelque chose d'extraordinaire ensemble.",
+    "formTitle": "Envoyez-nous un message",
+    "formSubtitle": "Nous vous répondrons dans les 24 heures.",
+    "labelName": "Votre Nom",
+    "labelEmail": "Votre Email",
+    "labelSubject": "Sujet",
+    "labelMessage": "Message",
+    "placeholderName": "Jean Dupont",
+    "placeholderEmail": "jean@exemple.com",
+    "placeholderSubject": "Comment pouvons-nous vous aider ?",
+    "placeholderMessage": "Parlez-nous de votre projet...",
+    "submitBtn": "Envoyer le Message",
+    "successAlert": "Merci pour votre message ! Nous vous répondrons bientôt."
+  },
+  "footer": {
+    "stayUpdated": "Restez Informé",
+    "newsletterDesc": "Abonnez-vous à notre newsletter pour les dernières actualités et innovations.",
+    "emailPlaceholder": "Entrez votre email",
+    "subscribe": "S'abonner",
+    "brandDesc": "Des solutions numériques de classe mondiale pour les entreprises. Innovation. Excellence. Croissance.",
+    "company": "Entreprise",
+    "aboutUs": "À Propos",
+    "ourTeam": "Notre Équipe",
+    "servicesLink": "Services",
+    "careers": "Carrières",
+    "contactLink": "Contact",
+    "servicesTitle": "Services",
+    "webDev": "Développement Web",
+    "mobileApps": "Applications Mobiles",
+    "aiMl": "IA & Machine Learning",
+    "cloudSolutions": "Solutions Cloud",
+    "cybersecurity": "Cybersécurité",
+    "getInTouch": "Nous Contacter",
+    "copyright": "Tous droits réservés.",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation"
+  },
+  "training": {
+    "label": "Nos Formations",
+    "title1": "Formations",
+    "titleHighlight": "Professionnelles IT",
+    "desc": "Boostez votre carrière grâce à nos programmes de formation complets dans les domaines clés de l'informatique. Des débutants aux professionnels, nos cours dirigés par des experts sont conçus pour le succès concret.",
+    "cta": "S'inscrire",
+    "ctaDesc": "Prêt à développer vos compétences ? Contactez-nous pour en savoir plus sur nos prochaines sessions de formation et nos programmes personnalisés pour entreprises.",
+    "ctaBtn": "Commencer Aujourd'hui",
+    "items": [
+      {
+        "title": "Bureautique & Productivité",
+        "desc": "Maîtrisez les outils bureautiques essentiels pour une productivité maximale.",
+        "topics": ["Microsoft Word", "Excel Avancé", "PowerPoint", "Google Workspace"],
+        "duration": "4 - 6 semaines"
+      },
+      {
+        "title": "Développement Web",
+        "desc": "Apprenez à créer des sites web modernes et responsifs à partir de zéro.",
+        "topics": ["HTML/CSS", "JavaScript", "React", "Node.js"],
+        "duration": "8 - 12 semaines"
+      },
+      {
+        "title": "Design Graphique",
+        "desc": "Créez des visuels époustouflants et maîtrisez les outils de design standards de l'industrie.",
+        "topics": ["Photoshop", "Illustrator", "Figma", "Identité Visuelle"],
+        "duration": "6 - 8 semaines"
+      },
+      {
+        "title": "Fondamentaux de la Programmation",
+        "desc": "Construisez une base solide en logique de programmation et langages populaires.",
+        "topics": ["Python", "Java", "Algorithmes", "Structures de Données"],
+        "duration": "10 - 14 semaines"
+      }
+    ]
+  }
+}

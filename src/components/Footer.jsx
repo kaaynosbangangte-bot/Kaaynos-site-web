@@ -1,10 +1,12 @@
 import { Mail, Phone, MapPin, ArrowUp, Linkedin, Twitter, Facebook, Instagram, Send } from 'lucide-react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
+import { useLanguage } from '../context/LanguageContext';
 import './Footer.css';
 
 const Footer = () => {
   const newsletterRef = useScrollReveal();
   const gridRef = useScrollReveal();
+  const { t } = useLanguage();
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -16,14 +18,14 @@ const Footer = () => {
       <div className="footer-newsletter reveal fade-up" ref={newsletterRef}>
         <div className="container footer-newsletter-inner">
           <div className="footer-newsletter-text">
-            <h3>Stay Updated</h3>
-            <p>Subscribe to our newsletter for the latest insights and innovations.</p>
+            <h3>{t('footer', 'stayUpdated')}</h3>
+            <p>{t('footer', 'newsletterDesc')}</p>
           </div>
           <form className="footer-newsletter-form" onSubmit={(e) => e.preventDefault()}>
-            <input type="email" placeholder="Enter your email" required />
+            <input type="email" placeholder={t('footer', 'emailPlaceholder')} required />
             <button type="submit">
               <Send size={16} />
-              Subscribe
+              {t('footer', 'subscribe')}
             </button>
           </form>
         </div>
@@ -38,8 +40,7 @@ const Footer = () => {
                 <img src="/logo.png" alt="Kaaynos Logo" />
               </div>
               <p>
-                Empowering businesses with world-class digital solutions.
-                Innovation. Excellence. Growth.
+                {t('footer', 'brandDesc')}
               </p>
               <div className="footer-socials">
                 <a href="#" aria-label="LinkedIn"><Linkedin size={16} /></a>
@@ -50,29 +51,29 @@ const Footer = () => {
             </div>
 
             <div className="footer-col">
-              <h4>Company</h4>
+              <h4>{t('footer', 'company')}</h4>
               <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#team">Our Team</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#why-us">Careers</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">{t('footer', 'aboutUs')}</a></li>
+                <li><a href="#team">{t('footer', 'ourTeam')}</a></li>
+                <li><a href="#services">{t('footer', 'servicesLink')}</a></li>
+                <li><a href="#why-us">{t('footer', 'careers')}</a></li>
+                <li><a href="#contact">{t('footer', 'contactLink')}</a></li>
               </ul>
             </div>
 
             <div className="footer-col">
-              <h4>Services</h4>
+              <h4>{t('footer', 'servicesTitle')}</h4>
               <ul>
-                <li><a href="#services">Web Development</a></li>
-                <li><a href="#services">Mobile Apps</a></li>
-                <li><a href="#services">AI & Machine Learning</a></li>
-                <li><a href="#services">Cloud Solutions</a></li>
-                <li><a href="#services">Cybersecurity</a></li>
+                <li><a href="#services">{t('footer', 'webDev')}</a></li>
+                <li><a href="#services">{t('footer', 'mobileApps')}</a></li>
+                <li><a href="#services">{t('footer', 'aiMl')}</a></li>
+                <li><a href="#services">{t('footer', 'cloudSolutions')}</a></li>
+                <li><a href="#services">{t('footer', 'cybersecurity')}</a></li>
               </ul>
             </div>
 
             <div className="footer-col">
-              <h4>Get in Touch</h4>
+              <h4>{t('footer', 'getInTouch')}</h4>
               <div className="footer-contact">
                 <div className="footer-contact-item">
                   <MapPin size={14} />
@@ -95,11 +96,11 @@ const Footer = () => {
       {/* Bottom bar */}
       <div className="footer-bottom">
         <div className="container footer-bottom-inner">
-          <p>© {new Date().getFullYear()} Kaaynos. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Kaaynos. {t('footer', 'copyright')}</p>
           <div className="footer-bottom-links">
-            <a href="#">Privacy Policy</a>
+            <a href="#">{t('footer', 'privacy')}</a>
             <span>·</span>
-            <a href="#">Terms of Service</a>
+            <a href="#">{t('footer', 'terms')}</a>
           </div>
           <button className="scroll-top" onClick={scrollToTop} aria-label="Scroll to top">
             <ArrowUp size={16} />

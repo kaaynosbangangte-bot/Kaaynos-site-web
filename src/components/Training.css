@@ -1,0 +1,230 @@
+.training {
+  padding: 100px 0;
+  background: var(--dark-50);
+  position: relative;
+  overflow: hidden;
+}
+
+.training-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.training-bg-circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.training-bg-circle-1 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(13, 148, 136, 0.08) 0%, transparent 70%);
+  top: -100px;
+  right: -100px;
+}
+
+.training-bg-circle-2 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(13, 148, 136, 0.06) 0%, transparent 70%);
+  bottom: -50px;
+  left: -50px;
+}
+
+.training-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.training-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+  background: rgba(13, 148, 136, 0.1);
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+}
+
+.training-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 20px;
+}
+
+.training-title span {
+  color: var(--primary);
+}
+
+.training-desc {
+  font-size: 1.1rem;
+  color: var(--dark-500);
+  line-height: 1.6;
+}
+
+.training-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  margin-bottom: 60px;
+}
+
+.training-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  overflow: hidden;
+}
+
+.training-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(13, 148, 136, 0.12);
+  border-color: rgba(13, 148, 136, 0.15);
+}
+
+.training-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 24px 20px;
+}
+
+.training-card-icon svg {
+  width: 56px;
+  height: 56px;
+  padding: 14px;
+  background: rgba(13, 148, 136, 0.1);
+  color: var(--primary);
+  border-radius: var(--radius-md);
+  transition: var(--transition);
+}
+
+.training-card:hover .training-card-icon svg {
+  background: var(--primary);
+  color: var(--white);
+  transform: scale(1.05);
+}
+
+.training-card-body {
+  padding: 0 24px 20px;
+  flex: 1;
+}
+
+.training-card-body h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+
+.training-card-body p {
+  font-size: 0.92rem;
+  color: var(--dark-500);
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.training-card-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.training-card-topics li {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--primary);
+  background: rgba(13, 148, 136, 0.08);
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  letter-spacing: 0.3px;
+}
+
+.training-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 24px;
+  border-top: 1px solid var(--dark-100);
+}
+
+.training-duration {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--dark-400);
+}
+
+.training-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary);
+  transition: var(--transition);
+}
+
+.training-card-link:hover {
+  gap: 10px;
+}
+
+.training-cta {
+  text-align: center;
+  padding: 40px;
+  background: linear-gradient(135deg, rgba(13, 148, 136, 0.06) 0%, rgba(13, 148, 136, 0.02) 100%);
+  border-radius: var(--radius-lg);
+  border: 1px dashed rgba(13, 148, 136, 0.2);
+}
+
+.training-cta p {
+  font-size: 1.1rem;
+  color: var(--dark-600);
+  margin-bottom: 20px;
+}
+
+.btn-training-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 32px;
+  background: var(--primary);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: var(--radius-full);
+  transition: var(--transition);
+  box-shadow: 0 4px 15px rgba(13, 148, 136, 0.3);
+}
+
+.btn-training-cta:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(13, 148, 136, 0.35);
+}
+
+@media (max-width: 768px) {
+  .training-title {
+    font-size: 2rem;
+  }
+  
+  .training-grid {
+    grid-template-columns: 1fr;
+  }
+}

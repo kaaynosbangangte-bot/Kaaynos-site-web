@@ -1,0 +1,182 @@
+{
+  "navbar": {
+    "about": "About",
+    "services": "Services",
+    "training": "Training",
+    "portfolio": "Portfolio",
+    "contact": "Contact Us",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "title1": "Redefining Possibilities with World-Class",
+    "title2": "Digital Innovation",
+    "desc1": "From App Development to AI, Cybersecurity, Cloud, and Infrastructure —",
+    "desc2": "We craft visionary solutions that inspire growth, drive innovation, and empower your success.",
+    "cta": "Get Started"
+  },
+  "about": {
+    "title1": "Discover Kaaynos:",
+    "titleHighlight": "Cutting-Edge Digital Solutions",
+    "title2": "Engineered for Your Success",
+    "subtitle": "We offer web development, AI, cybersecurity, cloud, and network solutions to help your business thrive with simple and effective technology.",
+    "learnMore": "Learn More",
+    "whoWeAre": "Who We Are",
+    "whoWeAreText": "Kaaynos is a technology powerhouse challenging the status quo by harnessing Africa's talent to deliver world-class solutions. Through cost efficiency, time zone synergy, and relentless innovation, we empower businesses while driving sustainability, social impact, and a future shaped by bold, transformative technology.",
+    "ourMission": "Our Mission",
+    "ourMissionText": "We unleash Africa's Brightest Minds to Transform the Future. We empower top talent to create scalable technology solutions that drive business growth, spark innovation, and advance a sustainable, impactful future.",
+    "ourVision": "Our Vision",
+    "ourVisionText": "To be Africa's foremost technology powerhouse, pioneering innovation, redefining excellence, and creating a sustainable impact on a global scale.",
+    "ourPurpose": "Our Purpose",
+    "purposeItems": [
+      { "strong": "Unlock Potential", "text": "Cultivating Africa's brightest minds, equipping them to lead in the global tech arena." },
+      { "strong": "Drive Sustainability", "text": "Pioneering ESG initiatives that create lasting social and environmental impact." },
+      { "strong": "Accelerate Innovation", "text": "Delivering groundbreaking, cost-effective technology solutions that fuel growth and redefine possibilities." }
+    ],
+    "coreValues": "Core Values",
+    "valuesItems": [
+      { "strong": "Excellence", "text": "Striving for top-quality results." },
+      { "strong": "Innovation", "text": "Creating forward-thinking solutions." },
+      { "strong": "Sustainability", "text": "Committing to responsible practices." },
+      { "strong": "Empowerment", "text": "Investing in talent and leadership." },
+      { "strong": "Collaboration", "text": "Building strong partnerships." }
+    ]
+  },
+  "services": {
+    "label": "What We Do",
+    "title1": "Our",
+    "titleHighlight": "Technology Services",
+    "desc": "Comprehensive digital solutions tailored to meet your unique business challenges and drive sustainable growth.",
+    "items": [
+      { "title": "Web Design & Development", "desc": "Creating stunning, responsive websites that captivate your audience and drive conversions." },
+      { "title": "AI & Machine Learning", "desc": "Leveraging artificial intelligence to automate processes and deliver intelligent insights." },
+      { "title": "Mobile App Development", "desc": "Building powerful, cross-platform mobile applications that users love." },
+      { "title": "Cybersecurity", "desc": "Protecting your digital assets with enterprise-grade security solutions." },
+      { "title": "Cloud Infrastructure", "desc": "Scalable, reliable cloud solutions to power your business operations globally." },
+      { "title": "Data Analytics", "desc": "Transforming raw data into actionable business intelligence and strategic insights." }
+    ]
+  },
+  "portfolio": {
+    "label": "Our Work",
+    "title1": "Featured",
+    "titleHighlight": "Projects",
+    "desc": "Explore our latest work. We take pride in delivering digital solutions that combine stunning design with robust engineering.",
+    "viewSite": "Visit Website",
+    "items": [
+      { "title": "UDM University Platform", "desc": "A complete and modern institutional website for the University, built with a professional design and intuitive navigation.", "category": "Website" },
+      { "title": "Cabinet Dentaire Smile", "desc": "An elegant and professional website for a dental clinic, designed to inspire trust and facilitate online appointment booking.", "category": "Website" }
+    ]
+  },
+  "whyUs": {
+    "label": "Our Advantages",
+    "title1": "Why",
+    "titleHighlight": "Work",
+    "title2": "With Us?",
+    "desc": "A dynamic, innovative IT company providing cutting-edge solutions that drive measurable success for our clients.",
+    "highlight": "We combine deep technical expertise with a relentless focus on results, making us your ideal technology partner for growth.",
+    "cta": "Start a project",
+    "items": [
+      { "title": "Fast Scalable Solutions", "desc": "Rapid deployment of cutting-edge solutions designed to grow seamlessly with your business needs." },
+      { "title": "Discover Ideal Experts", "desc": "Access a curated network of top-tier professionals with proven industry expertise and vision." },
+      { "title": "Quality First Approach", "desc": "Rigorous quality assurance at every stage ensures flawless, on-time delivery every time." },
+      { "title": "Innovation Driven", "desc": "Staying ahead of trends with innovative solutions built for the future of technology." },
+      { "title": "Trusted Partnerships", "desc": "Building lasting relationships based on trust, transparency, and mutual success." },
+      { "title": "24/7 Dedicated Support", "desc": "Round-the-clock assistance ensuring your business operations never miss a beat." }
+    ]
+  },
+  "team": {
+    "label": "Our Team",
+    "title1": "Meet Our",
+    "titleHighlight": "Leaders",
+    "desc": "Our experienced leadership team brings together decades of expertise in technology, business strategy, and innovation to drive your success.",
+    "viewProfile": "View Profile",
+    "members": [
+      { "role": "CEO", "bio": "Visionary leader driving Kaaynos's strategic growth and digital transformation across Africa." },
+      { "role": "Lead Developer", "bio": "Full-stack expert building scalable, high-performance enterprise solutions." },
+      { "role": "Lead AI", "bio": "Artificial intelligence specialist developing cutting-edge AI-driven solutions and innovations." }
+    ]
+  },
+  "contact": {
+    "label": "Contact Us",
+    "title1": "Join the Kaaynos Journey —",
+    "titleHighlight1": "Innovate",
+    "titleMiddle": ", Grow, and",
+    "titleHighlight2": "Lead",
+    "desc": "Ready to transform your digital presence? Let's discuss how we can help your business grow with our innovative solutions.",
+    "ourOffice": "Our Office",
+    "callUs": "Call Us",
+    "emailUs": "Email Us",
+    "workingHours": "Working Hours",
+    "workingHoursValue": "Mon — Fri: 08h - 18h",
+    "ctaText": "Let's build something amazing together.",
+    "formTitle": "Send us a message",
+    "formSubtitle": "We'll get back to you within 24 hours.",
+    "labelName": "Your Name",
+    "labelEmail": "Your Email",
+    "labelSubject": "Subject",
+    "labelMessage": "Message",
+    "placeholderName": "John Doe",
+    "placeholderEmail": "john@example.com",
+    "placeholderSubject": "How can we help?",
+    "placeholderMessage": "Tell us about your project...",
+    "submitBtn": "Send Message",
+    "successAlert": "Thank you for your message! We will get back to you soon."
+  },
+  "footer": {
+    "stayUpdated": "Stay Updated",
+    "newsletterDesc": "Subscribe to our newsletter for the latest insights and innovations.",
+    "emailPlaceholder": "Enter your email",
+    "subscribe": "Subscribe",
+    "brandDesc": "Empowering businesses with world-class digital solutions. Innovation. Excellence. Growth.",
+    "company": "Company",
+    "aboutUs": "About Us",
+    "ourTeam": "Our Team",
+    "servicesLink": "Services",
+    "careers": "Careers",
+    "contactLink": "Contact",
+    "servicesTitle": "Services",
+    "webDev": "Web Development",
+    "mobileApps": "Mobile Apps",
+    "aiMl": "AI & Machine Learning",
+    "cloudSolutions": "Cloud Solutions",
+    "cybersecurity": "Cybersecurity",
+    "getInTouch": "Get in Touch",
+    "copyright": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "training": {
+    "label": "Our Courses",
+    "title1": "Professional",
+    "titleHighlight": "IT Training",
+    "desc": "Empower your career with our comprehensive training programs in key IT domains. From beginners to professionals, our expert-led courses are designed for real-world success.",
+    "cta": "Enroll Now",
+    "ctaDesc": "Ready to boost your skills? Contact us to learn more about our upcoming training sessions and custom programs for businesses.",
+    "ctaBtn": "Get Started Today",
+    "items": [
+      {
+        "title": "Office Suite & Productivity",
+        "desc": "Master essential office tools for maximum productivity in the modern workplace.",
+        "topics": ["Microsoft Word", "Excel Advanced", "PowerPoint", "Google Workspace"],
+        "duration": "4 - 6 weeks"
+      },
+      {
+        "title": "Web Development",
+        "desc": "Learn to build modern, responsive websites and web applications from scratch.",
+        "topics": ["HTML/CSS", "JavaScript", "React", "Node.js"],
+        "duration": "8 - 12 weeks"
+      },
+      {
+        "title": "Graphic Design",
+        "desc": "Create stunning visuals and master industry-standard design tools and principles.",
+        "topics": ["Photoshop", "Illustrator", "Figma", "Brand Identity"],
+        "duration": "6 - 8 weeks"
+      },
+      {
+        "title": "Programming Fundamentals",
+        "desc": "Build a solid foundation in programming logic and popular languages.",
+        "topics": ["Python", "Java", "Algorithms", "Data Structures"],
+        "duration": "10 - 14 weeks"
+      }
+    ]
+  }
+}

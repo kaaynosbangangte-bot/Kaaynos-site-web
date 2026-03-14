@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 import './Hero.css';
 
 const slides = [
@@ -20,6 +21,7 @@ const slides = [
 const Hero = () => {
     const [current, setCurrent] = useState(0);
     const [isTransitioning, setIsTransitioning] = useState(false);
+    const { t } = useLanguage();
 
     const goTo = useCallback((index) => {
         if (isTransitioning) return;
@@ -60,20 +62,20 @@ const Hero = () => {
             {/* Content */}
             <div className="container hero-content">
                 <h1 className="hero-title">
-                    Redefining Possibilities with World-Class
+                    {t('hero', 'title1')}
                     <br />
-                    Digital Innovation
+                    {t('hero', 'title2')}
                 </h1>
 
                 <p className="hero-desc">
-                    From App Development to AI, Cybersecurity, Cloud, and Infrastructure —
+                    {t('hero', 'desc1')}
                     <br />
-                    We craft visionary solutions that inspire growth, drive innovation, and empower your success.
+                    {t('hero', 'desc2')}
                 </p>
 
                 <div className="hero-actions">
                     <a href="#services" className="btn-hero">
-                        Get Started
+                        {t('hero', 'cta')}
                         <ArrowRight size={18} />
                     </a>
                 </div>

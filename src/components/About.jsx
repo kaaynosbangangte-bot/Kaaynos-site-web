@@ -1,5 +1,6 @@
 import { ArrowUpRight } from 'lucide-react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
+import { useLanguage } from '../context/LanguageContext';
 import './About.css';
 
 const About = () => {
@@ -7,6 +8,10 @@ const About = () => {
   const ctaRef = useScrollReveal();
   const row3Ref = useScrollReveal();
   const row2Ref = useScrollReveal();
+  const { t } = useLanguage();
+
+  const purposeItems = t('about', 'purposeItems');
+  const valuesItems = t('about', 'valuesItems');
 
   return (
     <section className="about" id="about">
@@ -24,20 +29,19 @@ const About = () => {
         <div className="about-top">
           <div className="about-top-left reveal fade-up" ref={headerRef}>
             <h2 className="about-title">
-              Discover Kaaynos:{' '}
+              {t('about', 'title1')}{' '}
               <span className="about-title-highlight">
-                Cutting-Edge Digital Solutions
+                {t('about', 'titleHighlight')}
               </span>{' '}
-              Engineered for Your Success
+              {t('about', 'title2')}
             </h2>
             <p className="about-subtitle">
-              We offer web development, AI, cybersecurity, cloud, and network solutions to help your
-              business thrive with simple and effective technology.
+              {t('about', 'subtitle')}
             </p>
           </div>
           <div className="about-top-right reveal fade-left delay-200" ref={ctaRef}>
             <a href="#services" className="btn-learn-more">
-              Learn More
+              {t('about', 'learnMore')}
               <ArrowUpRight size={16} />
             </a>
           </div>
@@ -46,29 +50,23 @@ const About = () => {
         {/* Cards Row 1: 3 equal cards */}
         <div className="about-cards-row-3" ref={row3Ref}>
           <div className="about-card reveal fade-up delay-100">
-            <h3 className="about-card-title">Who We Are</h3>
+            <h3 className="about-card-title">{t('about', 'whoWeAre')}</h3>
             <p className="about-card-text">
-              Kaaynos is a technology powerhouse challenging the status quo by harnessing Africa's
-              talent to deliver world-class solutions. Through cost efficiency, time zone synergy,
-              and relentless innovation, we empower businesses while driving sustainability, social
-              impact, and a future shaped by bold, transformative technology.
+              {t('about', 'whoWeAreText')}
             </p>
           </div>
 
           <div className="about-card reveal fade-up delay-200">
-            <h3 className="about-card-title">Our Mission</h3>
+            <h3 className="about-card-title">{t('about', 'ourMission')}</h3>
             <p className="about-card-text">
-              We unleash Africa's Brightest Minds to Transform the Future. We empower top talent to
-              create scalable technology solutions that drive business growth, spark innovation, and
-              advance a sustainable, impactful future.
+              {t('about', 'ourMissionText')}
             </p>
           </div>
 
           <div className="about-card reveal fade-up delay-300">
-            <h3 className="about-card-title">Our Vision</h3>
+            <h3 className="about-card-title">{t('about', 'ourVision')}</h3>
             <p className="about-card-text">
-              To be Africa's foremost technology powerhouse, pioneering innovation, redefining
-              excellence, and creating a sustainable impact on a global scale.
+              {t('about', 'ourVisionText')}
             </p>
           </div>
         </div>
@@ -76,41 +74,24 @@ const About = () => {
         {/* Cards Row 2: 2 equal cards */}
         <div className="about-cards-row-2" ref={row2Ref}>
           <div className="about-card reveal fade-up delay-100">
-            <h3 className="about-card-title">Our Purpose</h3>
+            <h3 className="about-card-title">{t('about', 'ourPurpose')}</h3>
             <ul className="about-card-list">
-              <li>
-                <strong>Unlock Potential</strong> – Cultivating Africa's brightest minds, equipping
-                them to lead in the global tech arena.
-              </li>
-              <li>
-                <strong>Drive Sustainability</strong> – Pioneering ESG initiatives that create
-                lasting social and environmental impact.
-              </li>
-              <li>
-                <strong>Accelerate Innovation</strong> – Delivering groundbreaking, cost-effective
-                technology solutions that fuel growth and redefine possibilities.
-              </li>
+              {Array.isArray(purposeItems) && purposeItems.map((item, i) => (
+                <li key={i}>
+                  <strong>{item.strong}</strong> – {item.text}
+                </li>
+              ))}
             </ul>
           </div>
 
           <div className="about-card reveal fade-up delay-200">
-            <h3 className="about-card-title">Core Values</h3>
+            <h3 className="about-card-title">{t('about', 'coreValues')}</h3>
             <ul className="about-card-list">
-              <li>
-                <strong>Excellence</strong> – Striving for top-quality results.
-              </li>
-              <li>
-                <strong>Innovation</strong> – Creating forward-thinking solutions.
-              </li>
-              <li>
-                <strong>Sustainability</strong> – Committing to responsible practices.
-              </li>
-              <li>
-                <strong>Empowerment</strong> – Investing in talent and leadership.
-              </li>
-              <li>
-                <strong>Collaboration</strong> – Building strong partnerships.
-              </li>
+              {Array.isArray(valuesItems) && valuesItems.map((item, i) => (
+                <li key={i}>
+                  <strong>{item.strong}</strong> – {item.text}
+                </li>
+              ))}
             </ul>
           </div>
         </div>
