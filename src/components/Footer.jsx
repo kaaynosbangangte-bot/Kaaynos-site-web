@@ -77,11 +77,11 @@ const Footer = () => {
               <div className="footer-contact">
                 <div className="footer-contact-item">
                   <MapPin size={14} />
-                  <span>Abidjan, Côte d'Ivoire</span>
+                  <span>Bangangte, Cameroun</span>
                 </div>
                 <div className="footer-contact-item">
                   <Phone size={14} />
-                  <span>+225 07 00 00 00 00</span>
+                  <span>+237 78578089</span>
                 </div>
                 <div className="footer-contact-item">
                   <Mail size={14} />
