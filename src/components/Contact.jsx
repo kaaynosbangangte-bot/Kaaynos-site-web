@@ -59,7 +59,7 @@ const Contact = () => {
               </div>
               <div>
                 <h4>{t('contact', 'ourOffice')}</h4>
-                <p>Bangangte, Cameroun</p>
+                <p>Yaoundé, Cameroun</p>
               </div>
             </div>
 
@@ -69,7 +69,7 @@ const Contact = () => {
               </div>
               <div>
                 <h4>{t('contact', 'callUs')}</h4>
-                <p>+237 78578089</p>
+                <p>+237 678578089</p>
               </div>
             </div>
 

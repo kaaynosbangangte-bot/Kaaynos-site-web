@@ -7,7 +7,7 @@ const serviceIcons = [
   <Globe size={28} />,
   <Cpu size={28} />,
   <Smartphone size={28} />,
-  <Database size={28} />,
+  <Shield size={28} />,
   <Cloud size={28} />,
   <BarChart3 size={28} />,
 ];
@@ -16,7 +16,7 @@ const serviceImages = [
   'https://images.unsplash.com/photo-1547658719-da2b51169166?w=400&h=250&fit=crop',
   'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=250&fit=crop',
   'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=250&fit=crop',
-  'https://images.unsplash.com/photo-1563986768609-322da13575f2?w=400&h=250&fit=crop',
+  'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=250&fit=crop',
   'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=250&fit=crop',
   'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop',
 ];
